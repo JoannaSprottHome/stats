@@ -1,0 +1,17 @@
+.center {
+  text-align: center;
+}
+
+.centerGraph {
+  margin: auto;
+  display: block;
+}
+
+.margin-top-medium {
+  margin-top: 60px;
+}
+
+.margin-bottom-medium {
+  margin-bottom: 60px;
+}
+
