@@ -1,4 +1,4 @@
-## Starter project for react and D3
+## Stats from fitness devices
 
 After cloning run:   
    
@@ -14,8 +14,6 @@ To Run with docker:
 <br/>
 
 
-### Example Charts
+### Charts
 
-<img src="images/pie-chart.png" width="300">
-<br/>
 <img src="images/line-graph.png" width="300">
