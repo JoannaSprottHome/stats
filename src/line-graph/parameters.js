@@ -26,7 +26,7 @@ const yAxisTextParam = {
     x: 0 - (height /2),
     y: 0 + 50,
     text_anchor: "middle",
-    text: "Value"    
+    text: "Weight (g)"    
 };
 
 const xAxisTextParam = {

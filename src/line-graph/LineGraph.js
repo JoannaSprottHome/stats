@@ -76,10 +76,10 @@ export default class LineGraph extends Component {
   }
 
   render() {
-    const { svgProps } = this.props;
+    const { svgProps, title } = this.props;
       return (
       <div className="center">
-        <h1 className="margin-top-medium">Line Graph</h1>
+        <h2 className="margin-top-medium">{title}</h2>
         <div>
           <svg 
             ref={node => this.node = node} 
