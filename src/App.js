@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import './App.css';
-import PieChart from "./pie-chart/PieChart";
 import LineGraph from "./line-graph/LineGraph";
 
 
@@ -8,25 +7,36 @@ import LineGraph from "./line-graph/LineGraph";
 class App extends Component {
   render() {
       return (
-      <div className="center margin-bottom-medium">
-        <PieChart 
-          svgProps={
-            { 
-              width: 1375, 
-              height: 350,
-              id:"svg-pie"
+        <div className="center margin-bottom-medium">
+          <h1 id="mainTitle">Stats from MyFitnessPal, Withings Smart Watch and Scales</h1>
+          <LineGraph 
+            svgProps={
+              { 
+                width: 500, 
+                height: 300,
+                id:"svg-line-calories"
+              }
             }
-          }
-        /> 
-        <LineGraph 
-          svgProps={
-            { 
-              width: 500, 
-              height: 300,
-              id:"svg-line"
+            title="Calories" />  
+            <LineGraph 
+            svgProps={
+              { 
+                width: 500, 
+                height: 300,
+                id:"svg-line-macros"
+              }
             }
-          } />  
-      </div>
+            title="Macros" />
+            <LineGraph 
+            svgProps={
+              { 
+                width: 500, 
+                height: 300,
+                id:"svg-line-micros"
+              }
+            }
+            title="Micros" />  
+        </div>
     );
   }
 }
