@@ -42,7 +42,6 @@ const formatArrayByDateTotals = (array, [propsToConsolidate]) => { // TODO some 
           if (!totals[prop]) {
             totals[prop] = entry[prop];
           } else {
-            const currentValue = totals[prop];
             totals[prop] = Number(totals[prop]) + Number(entry[prop]);
           }
         } 

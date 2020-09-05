@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
 import LineGraph from "./line-graph/LineGraph";
+import TestFile from "./line-graph/TestFile";
 
 
 
@@ -36,6 +37,7 @@ class App extends Component {
               }
             }
             title="Micros" />  
+            <TestFile />
         </div>
     );
   }
